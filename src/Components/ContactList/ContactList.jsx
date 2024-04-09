@@ -26,7 +26,10 @@ import s from "./ContactList.module.scss";
 const ContactListItem = ({ id, name, number, onRemove }) => {
   return (
     <li className={s.item}>
-      {name}: {number} <button className={s.btnDel} onClick={() => onRemove(id)}>Delete</button>
+      {name}: {number}{" "}
+      <button className={s.btnDel} onClick={() => onRemove(id)}>
+        Delete
+      </button>
     </li>
   );
 };

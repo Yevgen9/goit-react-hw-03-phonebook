@@ -93,6 +93,9 @@ class App extends Component {
     const { filter } = this.state;
     const visibleContacts = this.getVisibleContacts();
 
+    const contactItem = this.state.contacts;
+    localStorage.setItem("contactsItem", JSON.stringify(contactItem));
+
     return (
       <>
         <h1>Phonebook</h1>

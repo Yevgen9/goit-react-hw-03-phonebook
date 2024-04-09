@@ -75,6 +75,7 @@
 import React, { Component } from "react";
 import { nanoid } from "nanoid";
 import s from "./ContactForm.module.scss";
+import contacts from "../../contacts.json";
 
 const INIITAL_STATE = {
   name: "",
@@ -94,6 +95,7 @@ class ContactForm extends Component {
 
     const { name, number } = this.state;
     const { onAdd } = this.props;
+
 
     const isValidatedForm = this.validateForm();
 
