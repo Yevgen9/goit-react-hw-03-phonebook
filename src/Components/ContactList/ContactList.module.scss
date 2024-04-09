@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.item {
+    display: flex;
+    font-size: 20px;
+    
+
+}
+
+.item:not(:last-child) {
+margin-bottom: 5px;
+
+}
+
+.btnDel {
+    margin-left: 1%;
+}
